@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.conteiner{
+    margin: 0 auto;
+}
+
+.header{
+    height: 1080px;
+    width: 100%;
+    background: url(../image/back.png) 100% 100% no-repeat;
+    background-size: auto auto;
+}
