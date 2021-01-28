@@ -327,8 +327,7 @@ a{
 }
 .contact__fieldset{
     margin-bottom: 15px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding: 15px 0 10px 0;
 }
 .contact__field{
     margin: 15px 0 15px 10px;
@@ -421,7 +420,7 @@ a{
 }
 .footer__link{
     color: #909090;
-    margin-right: 24px;
+    margin: 0 12px 0 12px;
     font-size: 14px;
 }
 .footer__text{
