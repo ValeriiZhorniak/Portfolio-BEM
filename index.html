@@ -25,12 +25,19 @@
             </div>
         </header>
 
+
         <nav class="nav">
+            <input id="nav__toggle" type="checkbox" />
+            <label class="nav__btn" for="nav__toggle">
+              <span></span>
+            </label>
+
             <div class="nav__list">
                 <a href="#home" class="nav__item_active">HOME</a>
                 <a href="#about" class="nav__item">ABOUT US</a>
                 <a href="#portfolio" class="nav__item">PORTFOLIO</a>
                 <a href="#contact" class="nav__item">CONTACT</a>
+            </div>
         </nav>
 
         <div class="line"></div>
@@ -131,7 +138,7 @@
                                 <p class="contact__field"><label for="name">YOUR NAME</label><input type="text" id="name"></p>
                                 <p class="contact__field"><label for="email">YOUR E-MAIL</label><input type="email" id="email"></p>
                             </div>
-                            <p class="contact__field"><label for="message">MESSAGE</label><textarea name="" id="message"></textarea></p>
+                            <p class="contact__field"><label for="message">MESSAGE</label><textarea name="text" id="message"></textarea></p>
                         </fieldset>
                         <p><input type="submit" value="SEND" class="contact__button"></p>
                     </form>
@@ -169,7 +176,7 @@
                     <div class="footer__text">© 2015. All Rights Reserved</div>
                 </div>
             </div>
-
+            </div>
         </div>
 </body>
 
