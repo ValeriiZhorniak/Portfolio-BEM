@@ -1,25 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-.conteiner{
-    margin: 0 auto;
-}
-a{
-    text-decoration: none;
-    color: #000;
-}
-
 /*header*/
 .header__body{
     min-height: 1080px;
     min-width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     background: url(../image/back.png) 100% 100% no-repeat;
     background-size: auto auto;
     display: flex;
@@ -104,10 +89,9 @@ a{
     font-size: 15px;
     margin: 0 22px 0 22px;
 }
-.nav__item_active{
+.nav__item:hover{
     color: #ada074;
-    font-size: 15px;
-    margin: 0 22px 0 22px;
+    transition: 0.3s ease;
 }
 .line{
     min-width: 100%;
@@ -224,9 +208,9 @@ a{
     margin: 0 25px 0 25px;
     color: #000;
 }
-.portfolio__item_active{
+.portfolio__item:hover{
     color: #ada074;
-    margin: 0 25px 0 25px;
+    transition: 0.3s ease;
 }
 .portfolio__boxs{
     display: flex;
@@ -470,6 +454,10 @@ a{
     }
 }
 @media (max-width: 767px){
+    .nav__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .conteiner{
         max-width: none;
     }
@@ -488,6 +476,10 @@ a{
     .about__title::after{
         top: 7%;
         transform: translate(-50%, -93%);
+    }
+    .about__text{
+        margin-right: 7px;
+        margin-left: 7px;
     }
     .about__block{
         flex-wrap: wrap;
@@ -529,91 +521,6 @@ a{
     }
     .partners__company{
         margin: 0 10px 0 10px;
-    }
-
-    #nav__toggle {
-        opacity: 0;
-    }
-    .nav__btn {
-        display: flex; 
-        align-items: center; 
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        z-index: 1;
-    }
-    .nav__btn > span,
-    .nav__btn > span::before,
-    .nav__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #616161;
-    }
-    .nav__btn > span::before {
-        content: '';
-        top: -8px;
-    }
-    .nav__btn > span::after {
-        content: '';
-        top: 8px;
-    }
-    .nav__list {
-        display: block;
-        position: fixed;
-        visibility: hidden;
-        top: 0;
-        left: -100%;
-        width: 300px;
-        height: 100%;
-        margin: 0;
-        padding: 80px 0;
-        list-style: none;
-        text-align: center;
-        background-color: #ECEFF1;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    }
-    .nav__item, .nav__item_active {
-        display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    .nav__item:hover, .nav__item_active:hover {
-        background-color: #CFD8DC;
-    }
-    #nav__toggle:checked ~ .nav__btn > span {
-        transform: rotate(45deg);
-    }
-    #nav__toggle:checked ~ .nav__btn > span::before {
-        top: 0;
-        transform: rotate(0);
-    }
-    #nav__toggle:checked ~ .nav__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-    #nav__toggle:checked ~ .nav__list {
-        visibility: visible;
-        left: 0;
-    }
-    .nav__btn > span,
-    .nav__btn > span::before,
-    .nav__btn > span::after {
-    transition-duration: .25s;
-    }
-    .nav__list {
-    transition-duration: .25s;
-    }
-    .nav__item, .nav__item_active {
-    transition-duration: .25s;
     }
     }
   
